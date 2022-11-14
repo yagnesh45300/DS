@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<coino.h>
+
+void str_ct(char sou[],char dest[])
+{
+int i=0,j=0;
+i=str_len(sou);
+while(dest[j]!='\0')
+{
+sou[i]=dest[j];
+j++;
+i++;
+}
+sou[i]='/0';
+}
+void main()
+{
+char a[20],b[10];
+clrscr();
+pirntf("entre string : ");
+gets(a);
+printf("enetr string : ");
+gets(b);
+str_cat(a,b);
+printf("srtring is %s",a);
+strcat(a);
+getch();
+}
